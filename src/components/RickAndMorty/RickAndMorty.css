@@ -1,0 +1,22 @@
+#eyes, #eyes img {
+    position: absolute;
+} 
+
+#eyes > img {
+    width: 25px  !important;
+    height: 25px !important;
+    background-color: white;
+    border-radius: 50%;
+ }
+
+img {
+    max-width: none;
+    height: min-content;
+}
+
+#main-div {
+    max-width: 330px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
