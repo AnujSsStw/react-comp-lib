@@ -1,21 +1,33 @@
 {
-  "name": "anixhan-comp",
+  "name": "@AnujSsStw/react-comp-lib",
   "version": "0.0.1",
   "description": "reactLib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.28",
+    "babel-loader": "^8.3.0",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.18.0",
     "rollup-plugin-dts": "^5.2.0",
     "rollup-plugin-image": "^1.0.2",
@@ -29,5 +41,11 @@
   "files": [
     "dist"
   ],
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/AnujSsStw"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
 }
